@@ -91,7 +91,7 @@ defineProps({
   border: 1px solid #81ec88be;
   border-radius: 0.5rem;
   background-color: #0f684a6b;
-  backdrop-filter: blur(7px);
+
   padding: 1.5rem;
   transition: all 0.2s ease-in-out;
   &:hover .ensayo-content h2 {

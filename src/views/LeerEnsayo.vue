@@ -13,7 +13,7 @@ import PopUp from "../components/PopUp.vue";
 import useAuthStore from "../stores/authStore";
 import { storeToRefs } from "pinia";
 import ComentarioComponent from "../components/ComentarioComponent.vue";
-import useDatabaseStore from '../stores/databaseStore';
+import useDatabaseStore from "../stores/databaseStore";
 
 const route = useRoute();
 const ensayosTexto = useEnsayosTexto();
@@ -23,18 +23,12 @@ const section2 = ref(null);
 const isOpen = ref(false);
 const databaseStore = useDatabaseStore();
 
-
-
-
-
 onMounted(() => {
-  databaseStore.getTodos(ensayo.tabla)
+  databaseStore.getTodos(ensayo.tabla);
   setTimeout(() => {
     isOpen.value = true;
   }, 15000);
-  
 });
-
 
 function cerrarPopup(e) {
   isOpen.value = e;
@@ -44,14 +38,11 @@ function irComentarios() {
   section2.value.scrollIntoView({ behavior: "smooth" });
 }
 
-
-
 const { isSession } = storeToRefs(useAuthStore());
 const { avatarUrl } = storeToRefs(useAuthStore());
 const { fullName } = storeToRefs(useAuthStore());
-const comentario = ref("")
-const {todos} = storeToRefs(databaseStore)
-
+const comentario = ref("");
+const { todos } = storeToRefs(databaseStore);
 </script>
 <template>
   <section class="ensayos">
@@ -201,8 +192,6 @@ const {todos} = storeToRefs(databaseStore)
       <p class="ensayo-text">{{ ensayo.conclusion }}</p>
     </div>
     <div ref="section2" class="comentarios-container">
-      
-
       <div v-if="isSession" class="unete comment">
         <div class="comment">
           <div class="usuario">
@@ -226,7 +215,14 @@ const {todos} = storeToRefs(databaseStore)
               placeholder="Comparte tu opinion con todos sobre este ensayo..."
             ></textarea>
             <button
-            @click.prevent="databaseStore.addComment(ensayo.tabla,fullName,avatarUrl,comentario)"
+              @click.prevent="
+                databaseStore.addComment(
+                  ensayo.tabla,
+                  fullName,
+                  avatarUrl,
+                  comentario
+                )
+              "
               :class="comentario.length > 0 ? 'active' : 'inactive'"
               class="comentar-button"
             >
@@ -263,12 +259,17 @@ const {todos} = storeToRefs(databaseStore)
         </p>
         <ButtonLogin class="coment-login"></ButtonLogin>
       </div>
-      
     </div>
     <div class="comentarios-realizados">
       <h3 class="comentario-contador">Comentarios ({{ todos.length }})</h3>
-        <ComentarioComponent v-for="persona in todos" :key="persona.id" :avatar="persona.avatar_url" :nickname="persona.nickname" :content="persona.content"></ComentarioComponent>
-      </div>
+      <ComentarioComponent
+        v-for="persona in todos"
+        :key="persona.id"
+        :avatar="persona.avatar_url"
+        :nickname="persona.nickname"
+        :content="persona.content"
+      ></ComentarioComponent>
+    </div>
   </section>
 </template>
 <style scoped>
@@ -503,7 +504,7 @@ const {todos} = storeToRefs(databaseStore)
     background: linear-gradient(to right, #0f8f15, #189460);
   }
 }
-.comentarios-realizados{
+.comentarios-realizados {
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -513,7 +514,8 @@ const {todos} = storeToRefs(databaseStore)
   padding: 3rem;
   gap: 1rem;
 }
-@media (width < 768px) {
+
+@media(width < 768px) {
   .ensayos {
     width: 90%;
     padding: 1rem;
@@ -545,11 +547,14 @@ const {todos} = storeToRefs(databaseStore)
   .unete {
     gap: 0.5rem;
   }
+  .comentarios-realizados{
+    padding: 1.5rem;
+  }
   .coment-login {
     margin-top: 0.5rem;
     width: fit-content;
     display: flex;
-    padding: .7rem;
+    padding: 0.7rem;
     justify-content: center;
     align-items: center;
   }

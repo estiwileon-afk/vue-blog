@@ -52,4 +52,9 @@ defineProps({
   font-weight: 400;
   font-size: clamp(.8rem, 2vw + .3rem ,1rem);
 }
+@media(width < 768px){
+  .comentario-container{
+    padding: 1rem;
+  }
+}
 </style>

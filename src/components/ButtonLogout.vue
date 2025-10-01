@@ -23,15 +23,14 @@ const {avatarUrl} = storeToRefs(authStore)
   width: 100%;
   justify-content: center;
   gap: 0.5rem;
-  
   align-items: center;
-  color: white;
-  padding: 0 1rem;
   background-color: #0d7a8d;
-  font-size: 1.1em;
-  height: 100%;
+  color: white;
+  padding: 0.8rem 1rem;
+  line-height: 1;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1.1em;
   border-radius: 0.8rem;
   transition: all 0.3s ease-in-out;
   &:hover {

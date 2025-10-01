@@ -245,6 +245,7 @@ const {isAuthReady} = storeToRefs(useAuthStore())
     padding: 3rem;
     padding-bottom: 2rem;
     flex-direction: column;
+    height: max-content;
     width: 100%;
     transform: translateY(-100%);
     transition: all 0.3s ease-out;

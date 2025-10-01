@@ -35,7 +35,6 @@ const login = useAuthStore().login;
   line-height: 1;
   cursor: pointer;
   font-weight: 600;
-  
   font-size: 1.1em;
   border-radius: 0.8rem;
   transition: all 0.3s ease-in-out;
