@@ -1,12 +1,11 @@
-import { createWebHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Inicio from "../views/Inicio.vue";
-
-import { createRouter } from "vue-router";
 import Ensayos from "../views/Ensayos.vue";
 import NuestroEquipo from "../views/NuestroEquipo.vue";
 import LeerEnsayo from "../views/LeerEnsayo.vue";
 
 const routes = [
+  
   {
     path: "/",
     name: "Inicio",
@@ -17,7 +16,6 @@ const routes = [
     name: "Ensayos",
     component: Ensayos,
   },
-  ,
   {
     path: "/Ensayos/:id",
     name: "LeerEnsayo",
@@ -29,17 +27,16 @@ const routes = [
     component: NuestroEquipo,
   },
 ];
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-      if (savedPosition) {
-        savedPosition;
-      }else{
-        return { top: 0 };
-      }
-    
-    
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
   },
 });
 
