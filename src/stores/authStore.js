@@ -9,11 +9,11 @@ const useAuthStore = defineStore("auth", () => {
   const avatarUrl = computed(() => user.value?.user_metadata?.avatar_url);
   const fullName = computed(() => user.value?.user_metadata?.full_name);
   async function login() {
-    localStorage.setItem('supabase_prev_path', window.location.pathname)
+    
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: window.location.href,
+        redirectTo:`${window.location.origin}/auth/callback?redirectTo=${encodeURIComponent(window.location.pathname)}`,
       },
     });
 

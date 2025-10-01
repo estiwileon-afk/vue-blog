@@ -3,9 +3,9 @@ import Inicio from "../views/Inicio.vue";
 import Ensayos from "../views/Ensayos.vue";
 import NuestroEquipo from "../views/NuestroEquipo.vue";
 import LeerEnsayo from "../views/LeerEnsayo.vue";
+import AuthCallback from "../views/AuthCallback.vue";
 
 const routes = [
-  
   {
     path: "/",
     name: "Inicio",
@@ -26,6 +26,11 @@ const routes = [
     name: "Nuestro Equipo",
     component: NuestroEquipo,
   },
+  {
+    path: "/auth/callback",
+    name: "auth_callback",
+    component: AuthCallback,
+  },
 ];
 
 const router = createRouter({
@@ -33,7 +38,7 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      return savedPosition;
+       savedPosition;
     } else {
       return { top: 0 };
     }

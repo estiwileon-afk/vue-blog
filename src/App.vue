@@ -25,7 +25,7 @@ function crearParticulas() {
     particula.style.height = `${tamaño}px`;
     //Posicion
     const posicionX = Math.floor(Math.random() * (96 - 2 + 1) + 2);
-    const posicionY = Math.floor(Math.random() * (120 - 5 + 1) + 2);
+    const posicionY = Math.floor(Math.random() * (96 - 5 + 1) + 5);
 
     particula.style.top = `${posicionY}vh`;
     particula.style.left = `${posicionX}%`;
