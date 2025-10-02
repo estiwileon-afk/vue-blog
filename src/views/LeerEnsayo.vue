@@ -7,13 +7,14 @@ import kimiImg from "../assets/kimi.jpg";
 import { useRoute } from "vue-router";
 import useEnsayosTexto from "../stores/ensayosTextoStore";
 import ButtonLogin from "../components/ButtonLogin.vue";
-import { onMounted, ref } from "vue";
+import { nextTick, onMounted, ref, watch } from "vue";
 import router from "../router";
 import PopUp from "../components/PopUp.vue";
 import useAuthStore from "../stores/authStore";
 import { storeToRefs } from "pinia";
 import ComentarioComponent from "../components/ComentarioComponent.vue";
 import useDatabaseStore from "../stores/databaseStore";
+import LoginCom from "../components/LoginCom.vue";
 
 const route = useRoute();
 const ensayosTexto = useEnsayosTexto();
@@ -23,7 +24,9 @@ const section2 = ref(null);
 const isOpen = ref(false);
 const databaseStore = useDatabaseStore();
 
+
 onMounted(() => {
+ 
   databaseStore.getTodos(ensayo.tabla);
   setTimeout(() => {
     isOpen.value = true;
@@ -35,7 +38,14 @@ function cerrarPopup(e) {
 }
 
 function irComentarios() {
-  section2.value.scrollIntoView({ behavior: "smooth" });
+  section2.value?.scrollIntoView({ behavior: "smooth" });
+  
+}
+function handleLoginDesdePadre() {
+  // Guardar flag antes de redireccionar
+  localStorage.setItem('debe-hacer-scroll-login', '1')
+  // Aquí la lógica para redirigir a Google
+ 
 }
 
 const { isSession } = storeToRefs(useAuthStore());
@@ -43,6 +53,16 @@ const { avatarUrl } = storeToRefs(useAuthStore());
 const { fullName } = storeToRefs(useAuthStore());
 const comentario = ref("");
 const { todos } = storeToRefs(databaseStore);
+watch(isSession, (nuevo) => {
+  if (nuevo && localStorage.getItem('debe-hacer-scroll-login') === '1'
+  ) {
+    
+      section2.value?.scrollIntoView({behavior: 'smooth'})
+      
+      localStorage.removeItem('debe-hacer-scroll-login')
+    
+  }
+})
 </script>
 <template>
   <section class="ensayos">
@@ -257,11 +277,11 @@ const { todos } = storeToRefs(databaseStore);
         <p class="unete-texto">
           Inicia sesión para compartir tu opinión y ser parte de este ensayo.
         </p>
-        <ButtonLogin class="coment-login"></ButtonLogin>
+        <LoginCom @is-log-com="handleLoginDesdePadre" :referencia="section2"></LoginCom>
       </div>
     </div>
     <div class="comentarios-realizados">
-      <h3 class="comentario-contador">Comentarios ({{ todos.length }})</h3>
+      <h3 class="comentario-contador">Comentarios ({{ todos.length }})</h3> 
       <ComentarioComponent
         v-for="persona in todos"
         :key="persona.id"
@@ -447,17 +467,7 @@ const { todos } = storeToRefs(databaseStore);
   align-items: center;
   background: linear-gradient(to right bottom, #16d31f, #23cf87);
 }
-.coment-login {
-  margin-top: 1rem;
-  width: fit-content;
-  background-color: #16d31f;
 
-  color: #054709;
-  &:hover {
-    background-color: #043d07;
-    color: white;
-  }
-}
 .comment {
   display: flex;
   flex-direction: column;

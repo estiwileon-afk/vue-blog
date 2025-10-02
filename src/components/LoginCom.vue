@@ -1,8 +1,30 @@
 <script setup>
-import { ref } from "vue";
-import useAuthStore from "../stores/authStore";
+import { onMounted, ref } from "vue";
+import { supabase } from "../utils/supabase";
 
-const login = useAuthStore().login;
+const emit = defineEmits(["isLogCom"])
+
+const props = defineProps({
+    referencia: Object
+})
+
+
+    async function login() {
+    
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: window.location.href
+      },
+    });
+    emit("isLogCom")
+    
+  }
+    
+    
+    
+
+
 
 </script>
 <template>
@@ -25,14 +47,12 @@ const login = useAuthStore().login;
 </template>
 <style scoped>
 .login {
+    
   display: flex;
-  width: 100%;
   height: 100%;
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
-  background-color: #0d7a8d;
-  color: white;
   padding: 0.8rem 1rem;
   line-height: 1;
   cursor: pointer;
@@ -40,19 +60,14 @@ const login = useAuthStore().login;
   font-size: 1.1em;
   border-radius: 0.8rem;
   transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+  width: fit-content;
+  background-color: #16d31f;
+  color: #054709;
   &:hover {
-    background-color: white;
-    color: #035707;
-  }
-}
-@media (width < 768px) {
-  .login {
-    background-color: #0d7a8d;
+    background-color: #043d07;
     color: white;
-    &:active {
-      scale: 1.05;
-      filter: brightness(1.2);
-    }
   }
 }
+
 </style>
