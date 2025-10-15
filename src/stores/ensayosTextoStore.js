@@ -11,6 +11,7 @@ const useEnsayosTexto = defineStore("ensayosTexto", () => {
       fecha: "17/09/2025",
       introduccion: `El comercio electrónico ha pasado de ser un canal marginal de transacciones en línea a convertirse en uno de los pilares fundamentales de la economía contemporánea. Durante las dos últimas décadas, la digitalización, la masificación del internet y el auge de los dispositivos móviles han transformado radicalmente los hábitos de consumo, abriendo la puerta a un mercado global donde las fronteras físicas se difuminan. De acuerdo con la Conferencia de las Naciones Unidas sobre Comercio y Desarrollo (UNCTAD, 2023), el e-commerce mundial superó los 5,5 billones de dólares en 2022 y continúa creciendo a tasas sostenidas, consolidándose como un motor de innovación y competitividad.
 En el caso latinoamericano, y particularmente en el Perú, la pandemia de COVID-19 aceleró la adopción de plataformas digitales de manera exponencial. El confinamiento y las restricciones de movilidad llevaron a miles de pequeñas y medianas empresas (pymes) a abrir canales de venta en línea como única alternativa de subsistencia. Según el Instituto Nacional de Estadística e Informática (INEI, 2024), más del 40% de los comercios minoristas peruanos realizaron por primera vez ventas digitales durante la emergencia sanitaria, marcando un punto de inflexión en la evolución del sector. Así, lo que inicialmente fue una respuesta coyuntural se consolidó como un hábito de consumo en la pospandemia.
+
 En 2025, el comercio electrónico no solo es un mecanismo para adquirir productos, sino un ecosistema donde convergen múltiples dimensiones: la inteligencia artificial (IA) que permite personalizar la experiencia del usuario, la realidad aumentada (AR) que ofrece nuevas formas de interacción con los productos, las billeteras digitales que amplían la inclusión financiera y la sostenibilidad como criterio central en la cadena logística. Al mismo tiempo, la regulación y la gestión ética de los datos personales se convierten en condiciones esenciales para sostener la confianza de los consumidores en un mercado cada vez más competitivo y vigilado.
 Este ensayo plantea como tesis que el éxito del comercio electrónico en 2025 dependerá de la capacidad de las empresas para integrar tres ejes estratégicos: la innovación tecnológica, la sostenibilidad logística y la transparencia en la gestión de datos personales. Aquellas organizaciones que logren equilibrar estos componentes no solo serán más competitivas, sino que también estarán mejor posicionadas para responder a las crecientes demandas sociales y ambientales de un consumidor más informado, crítico y exigente.`,
       texto: `1. Innovación tecnológica como motor del e-commerce en 2025
@@ -56,6 +57,7 @@ En síntesis, el comercio electrónico en 2025 representa una oportunidad histó
         "El Estado del Comercio Electrónico Global en 2025: Datos, Claves, Tendencias y Previsiones",
       fecha: "17/09/2025",
       introduccion: `El comercio electrónico mundial ha experimentado una evolución extraordinaria que ha transformado radicalmente la forma en que las empresas operan y los consumidores realizan sus compras. En 2025, nos encontramos ante un panorama digital que supera todas las proyecciones previas y que ha establecido nuevos paradigmas comerciales que definen el futuro de la economía global. Esta transformación no representa simplemente una digitalización de procesos tradicionales, sino una completa reimaginación de las relaciones comerciales que integra tecnologías emergentes, nuevos comportamientos de consumo y modelos de negocio innovadores.
+
 El presente ensayo examina de manera integral los elementos que configuran el comercio electrónico global en 2025, analizando desde las tendencias tecnológicas más disruptivas hasta los cambios estructurales en el comportamiento del consumidor, con el objetivo de proporcionar una comprensión profunda de un fenómeno que continúa redefiniendo las reglas del juego comercial a escala planetaria.`,
       texto: `El Panorama Actual
 
@@ -112,6 +114,134 @@ El dominio del comercio móvil, la integración de inteligencia artificial, el a
 
 En definitiva, el estado del comercio electrónico global en 2025 confirma que estamos presenciando la consolidación de un nuevo modelo económico que continuará evolucionando. Las empresas que comprendan esta transformación como un proceso continuo de adaptación e innovación estarán mejor posicionadas para capitalizar las oportunidades de un futuro comercial más digital, personalizado y globalmente integrado. La revolución del comercio electrónico no ha culminado; estamos en las etapas iniciales de una transformación que establecerá el comercio digital como la forma dominante de intercambio comercial del siglo XXI.`,
     },
+    {
+      id: "Propuesta Normativa",
+      tabla:"comments-3",
+      titulo:
+        "Propuesta Normativa Del Indecopi Para Regular El Comercio Electrónico En El Perú",
+      fecha: "15/10/2025",
+      introduccion: `El comercio electrónico en el Perú ha experimentado un crecimiento sin precedentes, impulsado por la pandemia de COVID-19, que aceleró cinco años de desarrollo en tan solo seis meses. A pesar de este avance, persisten vacíos legales que dejan desprotegidos a consumidores y proveedores ante incumplimientos, fraudes y productos riesgosos. Para subsanar estas deficiencias, el 7 de abril de 2021 el Indecopi presentó un documento de trabajo que propone actualizar el Código de Protección y Defensa del Consumidor (Ley N.º 29571) con disposiciones específicas para el entorno digital. Esta iniciativa busca establecer un estándar mínimo de cumplimiento en las transacciones en línea, garantizar la seguridad de los productos comercializados y promover mecanismos eficaces de resolución de controversias.`,
+      texto: `1. Derecho de Arrepentimiento
+      
+La propuesta establece el derecho de arrepentimiento, permitiendo al consumidor anular la compra o contratación de un bien o servicio sin penalización en un plazo de hasta 15 días desde la recepción o contratación. Este mecanismo fortalece la confianza del usuario al ofrecerle un periodo de evaluación real del producto, similar a las políticas de devolución de mercados con mayor madurez digital. Al reconocer la incertidumbre inherente a las compras a distancia, se busca equiparar los derechos del consumidor digital con los del comercio presencial.
+
+Para garantizar su aplicación, los proveedores deberán definir procesos claros de comunicación y logística de devolución, así como plazos precisos para el reembolso. De no establecerse estándares mínimos de operatividad, podría generarse retraso en las devoluciones o rechazos arbitrarios que vulneren los derechos del consumidor. En este sentido, el reglamento debería especificar requisitos de infraestructura y atención al cliente, especialmente para pequeñas empresas y zonas rurales, donde la capacidad logística es limitada.
+
+2. Seguridad de los Productos
+
+La normativa faculta a Indecopi para inmovilizar productos que representen un riesgo injustificado o peligroso en condiciones normales de uso, exigiendo a los proveedores disposiciones técnicas que avalen la idoneidad de sus bienes. Esta medida responde a la multiplicación de marketplace que comercializan desde dispositivos electrónicos defectuosos hasta suplementos no regulados. Al contar con esta facultad, la autoridad podrá retirar rápidamente del mercado digital aquellos artículos que pongan en riesgo la salud, mitigando posibles daños masivos.
+
+Adicionalmente, la propuesta sugiere la creación de un registro público de alertas de seguridad, accesible en línea, donde se publiquen productos sancionados y proveedores infractores. Este registro permitiría a los consumidores verificar la reputación de un vendedor o la seguridad de un artículo antes de concretar la compra, reduciendo la incidencia de reclamaciones y fortaleciendo la transparencia en el ecosistema digital. Asimismo, incentivaría a las empresas a mantener altos estándares de calidad para evitar sanciones y daños reputacionales.
+
+3. Intermediarios como Proveedores
+
+El documento propone considerar a las plataformas digitales y marketplaces como proveedores de servicios cuando intervienen en la fijación de precios, condiciones de venta o garantizan el cumplimiento de la transacción. Esta inclusión busca evitar vacíos legales en los que ni el vendedor ni la plataforma asumen responsabilidad ante defectos o estafas. Al asignar responsabilidad solidaria, los usuarios cuentan con un respaldo adicional para el ejercicio de sus derechos.
+
+Con el fin de no frenar la innovación, se contempla la posibilidad de acuerdos de autorregulación entre plataformas y asociaciones de microempresas, definiendo niveles de responsabilidad según el grado de intervención de la plataforma. De este modo, las entidades con participación operativa más limitada no se verían sometidas a la misma carga de obligaciones que aquellas que gestionan activamente la transacción, equilibrando protección al consumidor y flexibilidad de negocio.
+
+4. Información Veraz, Clara y Completa
+
+Para corregir la asimetría informativa del comercio electrónico, se exige a las empresas ofrecer información detallada y accesible sobre términos contractuales, características del producto, plazos de entrega, garantías, costos totales e impuestos. Esta transparencia es fundamental para que el consumidor compare ofertas y tome decisiones basadas en datos completos, reduciendo el riesgo de engaño o compras impulsivas con información parcial.
+
+Indecopi promoverá la implementación de “sellos de confianza” y etiquetas estandarizadas de calidad y origen, que certifiquen el cumplimiento de requisitos mínimos de divulgación. Estos distintivos, gestionados en colaboración con cámaras de comercio, servirían como indicadores visuales de confiabilidad, incentivando a los proveedores a adherirse voluntariamente a buenas prácticas y facilitando a los usuarios la rápida identificación de ofertas seguras.
+
+5. Sanciones y Solución de Controversias
+
+La propuesta incorpora circunstancias atenuantes para proveedores que reconozcan voluntariamente su infracción y se allanen a las pretensiones del consumidor, incentivando la reparación expedita antes de iniciar procesos sancionadores. Este enfoque pretende reducir la congestión administrativa y promover acuerdos amistosos que beneficien a ambas partes.
+
+Además, se plantea el fomento de la mediación y el arbitraje de consumo como alternativas rápidas y menos costosas que la vía judicial. Aunque aún no existen plataformas de Online Dispute Resolution (ODR) plenamente operativas en el Perú, la propuesta insta a su desarrollo, permitiendo resolver conflictos en línea con mayor agilidad. Paralelamente, se sugiere integrar sistemas de calificaciones y feedback en las plataformas de e-commerce, generando historiales de conducta que orienten tanto a consumidores como a Indecopi en la priorización de casos.
+
+6. Protección de Datos y Ciberseguridad
+
+Aunque no central en este documento, la protección de datos personales (Ley N.º 29733) y la ciberseguridad (Ley de Delitos Informáticos) constituyen pilares de confianza en el comercio electrónico. El Reglamento de Protección de Datos de 2024 profundiza obligaciones de consentimiento informado, retención limitada y designación de oficiales de cumplimiento, reforzando la seguridad jurídica del tratamiento de información personal.
+
+Para complementar estas disposiciones, la propuesta sugiere la creación de un programa voluntario de certificación en ciberseguridad para plataformas digitales, administrado por Indecopi junto a entidades tecnológicas. La obtención de esta certificación, visible para el consumidor, serviría como garantía de que la plataforma cumple con estándares modernos de protección de datos y resilientancia ante ataques, incentivando la inversión en tecnologías seguras.`,
+      conclusion: `El análisis del comercio electrónico global en 2025 revela una industria que ha alcanzado madurez y sofisticación excepcionales, consolidándose como la columna vertebral de la economía digital contemporánea. La convergencia de tecnologías emergentes ha creado un ecosistema que trasciende las limitaciones tradicionales del comercio, generando experiencias hiperpersonalizadas y eliminando barreras geográficas y temporales.
+
+El dominio del comercio móvil, la integración de inteligencia artificial, el auge del comercio social y la importancia creciente de la sostenibilidad confirman una transformación irreversible que ha redefinido las reglas del juego comercial. Los mercados emergentes como Perú ilustran el potencial de expansión que aún existe, mientras que los desafíos identificados representan oportunidades para empresas que sepan adaptarse eficazmente.
+
+En definitiva, el estado del comercio electrónico global en 2025 confirma que estamos presenciando la consolidación de un nuevo modelo económico que continuará evolucionando. Las empresas que comprendan esta transformación como un proceso continuo de adaptación e innovación estarán mejor posicionadas para capitalizar las oportunidades de un futuro comercial más digital, personalizado y globalmente integrado. La revolución del comercio electrónico no ha culminado; estamos en las etapas iniciales de una transformación que establecerá el comercio digital como la forma dominante de intercambio comercial del siglo XXI.`,
+    },
+    {
+    id:'Riesgos Legales', 
+    tabla: 'comments-4',
+    titulo: 'Riesgos Legales En El Comercio Electrónico En El Perú',
+    fecha:'15/10/2025',
+    introduccion:`El comercio electrónico ha surgido como un componente clave de la economía peruana, especialmente tras la pandemia de COVID-19, que aceleró cinco años de crecimiento en tan solo seis meses. Esta expansión, si bien ha generado oportunidades para consumidores y emprendedores, también ha revelado vacíos normativos que comprometen la protección de los derechos y la seguridad jurídica en el entorno digital. Ante dicha problemática, el Indecopi presentó en 2021 una propuesta normativa para actualizar el Código de Protección y Defensa del Consumidor (Ley N.º 29571) e incorporar mecanismos específicos para regular el e-commerce, abarcando desde el derecho de arrepentimiento hasta la resolución de controversias.`,
+    texto:`1. Derecho de Arrepentimiento
+
+La propuesta introduce un derecho de arrepentimiento que permite al consumidor anular la compra sin penalización hasta 15 días después de la recepción del producto o contratación del servicio. Esta figura, inspirada en la normativa europea, otorga mayor confianza al comprador a distancia. No obstante, sus críticos advierten que podría elevar costos de logística y generar barreras de entrada, afectando principalmente a microempresas que carecen de economías de escala para asumir devoluciones masivas.
+
+Además, la implementación práctica de este derecho exige a los proveedores establecer procesos claros de devolución y reembolso, así como canales de atención al cliente eficientes. La falta de una infraestructura logística adecuada en regiones alejadas puede complicar la devolución de productos, lo que podría derivar en incumplimientos y sanciones por parte de Indecopi. Por tanto, resulta fundamental que el reglamento defina estándares mínimos de operatividad para garantizar su efectividad tanto para consumidores como para comerciantes.
+
+2. Seguridad de Productos y Responsabilidad
+
+Para garantizar la seguridad de los bienes comercializados en línea, la propuesta faculta a la autoridad para inmovilizar productos riesgosos y exige a proveedores informar sobre posibles peligros en condiciones de uso normales. Esta medida se alinea con las recomendaciones de la OCDE, que instan a cooperar con empresas y reguladores para impedir la venta de productos inseguros en el comercio electrónico.
+
+Adicionalmente, se propone la creación de un registro público de alertas de seguridad, accesible tanto a consumidores como a empresas, donde se publiquen reportes de productos y proveedores sancionados. Este mecanismo promovería la transparencia y permitiría a los usuarios verificar la confiabilidad de un vendedor antes de realizar una compra, reduciendo la incidencia de productos defectuosos y fortaleciendo la confianza en el ecosistema digital.
+
+3. Intermediarios como Proveedores
+
+El texto normativo considera a los intermediarios digitales—plataformas y marketplaces—como proveedores cuando participan activamente en la determinación de precios y condiciones contractuales. Esta inclusión busca asegurar responsabilidades solidarias frente a defectos y fraudes, si bien podría incrementar la carga regulatoria de plataformas, encareciendo los servicios de intermediación y limitando la oferta de pequeños vendedores.
+
+Por otro lado, la regulación plantea fomentar acuerdos de autorregulación entre plataformas y asociaciones de microempresas para definir estándares de práctica adecuados. Estos acuerdos permitirían establecer niveles de responsabilidad diferenciados según el grado de intervención de la plataforma en la transacción, equilibrando la protección del consumidor con la flexibilidad operativa necesaria para impulsar la innovación en los modelos de negocio digitales.
+
+4. Información Veraz y Corrección de Asimetrías
+
+La propuesta refuerza el deber de proporcionar información clara y completa sobre términos de la oferta, características del producto, plazos de entrega y costos adicionales. Al mitigar la asimetría informativa, se busca que los compradores tomen decisiones mejor informadas y reduzcan el riesgo de fraudes. Este principio es esencial para la transparencia y la confianza, pilares del comercio electrónico sostenible.
+
+Asimismo, se recomienda la implementación de etiquetas estandarizadas de calidad y origen, similares a un “sello de confianza”, que certifiquen el cumplimiento de requisitos mínimos de información. Esta iniciativa podría ser gestionada por Indecopi en colaboración con cámaras de comercio, promoviendo la adopción voluntaria de buenas prácticas y facilitando al consumidor el reconocimiento inmediato de ofertas confiables.
+
+5. Mecanismos de Solución de Controversias
+
+Para agilizar la resolución de conflictos, se proponen incentivos para la mediación y el arbitraje de consumo, evitando la demora de procesos sancionadores. Aunque el Perú aún no cuenta con plataformas de Online Dispute Resolution (ODR) plenamente operativas, la adopción de estos mecanismos podría aproximar la justicia a consumidores y proveedores, reduciendo costos y tiempos de espera.
+
+Además, la propuesta sugiere la integración de sistemas de feedback y calificaciones en las plataformas de e-commerce como un método preliminar de resolución de disputas. Al permitir que consumidores y proveedores evalúen sus transacciones, se generaría un historial de buena conducta que facilite la identificación de patrones de incumplimiento y oriente a Indecopi en la priorización de casos para mediación o arbitraje.
+
+6. Protección de Datos y Ciberseguridad
+
+Aunque no central en la propuesta de 2021, el tratamiento de datos personales (Ley N.º 29733) y la ciberseguridad (Ley de Delitos Informáticos) representan riesgos legales críticos. El Reglamento de Protección de Datos de 2024 profundiza obligaciones de consentimiento, conservación limitada y designación de oficiales de cumplimiento, mientras que las sanciones por fraudes y accesos ilícitos requieren inversión constante en infraestructura de seguridad.
+
+Para complementar estas disposiciones, se plantea la creación de un programa de certificación voluntaria en ciberseguridad para plataformas de comercio electrónico, administrado por Indecopi en coordinación con entidades de tecnología. Esta certificación daría a los consumidores la garantía de que la plataforma cumple con estándares de protección de datos y resiliencia ante ciberataques, incentivando a las empresas a invertir en tecnologías seguras y a destacar en el mercado digital.`,
+    conclusion:`La propuesta normativa del Indecopi para regular el comercio electrónico en el Perú aborda pilares esenciales para equilibrar la protección del consumidor y la viabilidad de los proveedores. La introducción del derecho de arrepentimiento, la seguridad de productos, la responsabilidad de intermediarios, la transparencia informativa, los mecanismos de resolución de conflictos y la protección de datos representan avances significativos. Sin embargo, su éxito dependerá de una implementación gradual, la creación de instrumentos complementarios (registros de alertas, certificaciones voluntarias, acuerdos de autorregulación) y el fortalecimiento de capacidades de fiscalización y educación tanto de consumidores como de emprendedores. Solo de este modo se podrá consolidar un ecosistema de comercio electrónico confiable, dinámico e inclusivo.`
+    },
+    {
+    id:'Requisitos Legales', 
+    tabla: 'comments-5',
+    titulo: 'Requisitos Legales Para Establecer Un E-Commerce En El Perú',
+    fecha:'15/10/2025',
+    introduccion:`El comercio electrónico mantiene un crecimiento sostenido en el Perú, con proyecciones que superan los US$ 20 000 millones en ventas durante campañas estacionales, según la Cámara de Comercio de Lima. Esta dinámica ofrece una oportunidad única para que emprendedores y empresas amplíen su mercado y optimicen sus ingresos. Sin embargo, operar una tienda en línea implica enfrentar un marco normativo complejo, cuya adecuación es esencial para garantizar la seguridad jurídica, la confiabilidad y la sostenibilidad del negocio. Bruno Rojas Marallano, abogado especialista en Derecho Corporativo, identifica cinco requisitos legales básicos que toda plataforma de e-commerce debe cumplir: registro de la empresa, cumplimiento tributario, protección de datos personales, observancia de la normativa de consumo y contratos accesibles. Cada uno de estos aspectos fortalece la estructura operativa y reputacional de la tienda virtual, reduciendo riesgos y promoviendo relaciones de confianza con los usuarios.`,
+    texto:`1. Registro Legal de la Empresa
+
+Para brindar certeza a clientes, proveedores y entidades financieras, el primer paso consiste en registrar la empresa ante la Superintendencia Nacional de los Registros Públicos (Sunarp) y obtener el RUC en la SUNAT. Esta formalidad define la personalidad jurídica del negocio ya sea sociedad anónima, sociedad anónima cerrada, empresa individual de responsabilidad limitada u otro y permite acceder a beneficios como responsabilidad limitada para los socios, apertura de cuentas bancarias corporativas y participación en licitaciones.
+
+Más allá de la formalidad, un registro adecuado facilita la obtención de financiamiento y mejora la percepción de solvencia ante clientes y aliados comerciales. Además, la definición clara de la estructura organizacional y el objeto social evita conflictos internos y facilita la adaptación a distintos regímenes tributarios y regulatorios, preparándose para escalar sin sorpresas legales ni operativas.
+
+2. Cumplimiento de Normas Tributarias
+
+Una vez constituida la empresa, es fundamental adherirse al sistema tributario peruano, que exige el pago de Impuesto General a las Ventas (IGV) y la emisión de comprobantes electrónicos, como boletas y facturas, según los lineamientos de SUNAT. La correcta emisión de facturas permite a la empresa deducir costos y evita sanciones por omisión o emisión incorrecta que pueden alcanzar hasta 1% de la facturación anual.
+
+La elección del régimen tributario (general, MYPE Tributario o Régimen Único Simplificado) debe basarse en el volumen de ventas proyectado y el tipo de actividad económica. Un análisis previo con un contador o asesor fiscal optimiza la carga impositiva, evitando cambiar de régimen constantemente y minimizando contingencias. Asimismo, la generación oportuna de declaraciones mensuales y anuales fortalece la reputación fiscal y refuerza la confianza de inversores y aliados.
+
+3. Protección de Datos Personales
+
+La recopilación y tratamiento de datos de clientes requiere cumplir la Ley N.° 29733 de Protección de Datos Personales y su reglamento, que imponen requisitos de consentimiento informado, finalidad específica, retención limitada y seguridad de la información. El e-commerce debe publicar una política de privacidad clara, detallando cómo se recopilan, usan, conservan y transfieren los datos, así como los mecanismos para ejercer los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición).
+
+Para garantizar la integridad de la información, es necesario implementar medidas técnicas como encriptación SSL, controles de acceso por niveles y copias de respaldo periódicas. Adicionalmente, registrar el banco de datos ante la autoridad competente y designar un Oficial de Cumplimiento en casos de alto volumen fortalece la cultura de privacidad. La negligencia en este ámbito puede generar multas de hasta 100 UIT y dañar irreversiblemente la confianza del consumidor.
+
+4. Cumplimiento de la Ley de Protección al Consumidor
+
+La Ley N.° 29571 de Protección y Defensa del Consumidor establece que los proveedores deben ofrecer información veraz, clara y completa sobre productos, precios, plazos de entrega, garantías y políticas de devolución. En e-commerce, esta obligación se extiende a la implementación de un Libro de Reclamaciones virtual, accesible desde cualquier dispositivo, que facilite la presentación y seguimiento de quejas.
+
+Además de las disposiciones generales, la normativa exige prácticas publicitarias no engañosas y sanciona promociones falsas con multas significativas. Mantener un sistema interno de gestión de reclamos y tiempos de respuesta eficientes refuerza la reputación y reduce el riesgo de sanciones. La capacitación continua del equipo de atención al cliente y la revisión periódica de contenidos en el sitio aseguran el cumplimiento y elevan la experiencia del usuario.
+
+5. Contratos, Términos y Condiciones Accesibles
+
+Para delimitar derechos y obligaciones, es imprescindible incluir términos y condiciones de uso claros y comprensibles, accesibles desde la página de inicio. Este contrato debe especificar procesos de suscripción, compra, envíos, devoluciones, garantías, responsabilidad y manejo de datos personales. El uso de lenguaje sencillo y la disposición destacada de cláusulas esenciales evitan la nulidad de condiciones abusivas y fortalecen la confianza del consumidor.
+Complementariamente, es recomendable implementar un mecanismo de aceptación activa (casillas de verificación) para términos y condiciones y la política de privacidad. Esta práctica, respaldada por la Ley de Firmas y Certificados Digitales, asegura evidencia de consentimiento en caso de disputas judiciales. Ofrecer un canal de consultas legales o asistencia en línea sobre el contenido contractual aumenta la transparencia y reduce el riesgo de malentendidos.`,
+    conclusion:`Establecer un e-commerce en el Perú implica mucho más que montar una plataforma tecnológica: exige un cumplimiento riguroso de requisitos legales que protejan a consumidores y empresas. Registrar adecuadamente la empresa, adaptarse al régimen tributario, garantizar la privacidad de datos, observar la normativa de consumo y ofrecer contratos claros fortalece la seguridad jurídica y la reputación comercial. La implementación de estas prácticas, combinada con una gestión proactiva de riesgos y la mejora continua, permitirá a los negocios digitales crecer de manera sostenible, competitiva e integral en un mercado cada vez más exigente.`
+    }
+    
   ]);
 
   function obtenerEnsayo(id) {

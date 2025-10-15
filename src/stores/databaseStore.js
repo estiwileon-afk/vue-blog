@@ -4,6 +4,7 @@ import { ref } from "vue";
 
 const useDatabaseStore = defineStore("useDatabaseStore", () => {
   const todos = ref([]);
+  const comentario = ref("");
   async function getTodos(tabla) {
     const { data } = await supabase
     .from(tabla )
@@ -22,12 +23,15 @@ const useDatabaseStore = defineStore("useDatabaseStore", () => {
       content: comentario
     }
     ]);
+    
     getTodos(tabla)
+
   }
   return {
     todos,
     getTodos,
-    addComment
+    addComment,
+    comentario
   };
 });
 

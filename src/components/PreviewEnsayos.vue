@@ -1,5 +1,5 @@
 <script setup>
-import { useEnsayoStore } from "../stores/ensayoStore";
+
 
 defineProps({
   tendencia: String,

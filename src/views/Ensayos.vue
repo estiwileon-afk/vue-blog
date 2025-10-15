@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, ref } from "vue";
 import PreviewEnsayos from "../components/PreviewEnsayos.vue";
 import useEnsayoStore from "../stores/ensayoStore";
 

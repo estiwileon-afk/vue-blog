@@ -6,8 +6,8 @@ import sharlotImg from "../assets/sharlot.jpg";
 import kimiImg from "../assets/kimi.jpg";
 import { useRoute } from "vue-router";
 import useEnsayosTexto from "../stores/ensayosTextoStore";
-import ButtonLogin from "../components/ButtonLogin.vue";
-import { nextTick, onMounted, ref, watch } from "vue";
+
+import {  onMounted, ref, watch } from "vue";
 import router from "../router";
 import PopUp from "../components/PopUp.vue";
 import useAuthStore from "../stores/authStore";
@@ -15,6 +15,7 @@ import { storeToRefs } from "pinia";
 import ComentarioComponent from "../components/ComentarioComponent.vue";
 import useDatabaseStore from "../stores/databaseStore";
 import LoginCom from "../components/LoginCom.vue";
+import ComentarioExitoso from "../components/ComentarioExitoso.vue";
 
 const route = useRoute();
 const ensayosTexto = useEnsayosTexto();
@@ -23,7 +24,7 @@ const ensayo = ensayosTexto.obtenerEnsayo(rutaEnsayo);
 const section2 = ref(null);
 const isOpen = ref(false);
 const databaseStore = useDatabaseStore();
-
+const comentado = ref(false)
 
 onMounted(() => {
  
@@ -42,16 +43,16 @@ function irComentarios() {
   
 }
 function handleLoginDesdePadre() {
-  // Guardar flag antes de redireccionar
+ 
   localStorage.setItem('debe-hacer-scroll-login', '1')
-  // Aquí la lógica para redirigir a Google
+
  
 }
 
 const { isSession } = storeToRefs(useAuthStore());
 const { avatarUrl } = storeToRefs(useAuthStore());
 const { fullName } = storeToRefs(useAuthStore());
-const comentario = ref("");
+const {comentario} = storeToRefs(useDatabaseStore());
 const { todos } = storeToRefs(databaseStore);
 watch(isSession, (nuevo) => {
   if (nuevo && localStorage.getItem('debe-hacer-scroll-login') === '1'
@@ -59,10 +60,16 @@ watch(isSession, (nuevo) => {
     
       section2.value?.scrollIntoView({behavior: 'smooth'})
       
-      localStorage.removeItem('debe-hacer-scroll-login')
+      localStorage.removeItem('debe-hacer-scroll-logqAin')
     
   }
 })
+function activarPop(){
+  comentado.value = true
+  setTimeout(()=>{
+    comentado.value = false
+  },3500)
+}
 </script>
 <template>
   <section class="ensayos">
@@ -207,8 +214,9 @@ watch(isSession, (nuevo) => {
     <div class="ensayo-container">
       <h2 class="ensayo-titulo1">INTRODUCCIÓN</h2>
       <p class="ensayo-text">{{ ensayo.introduccion }}</p>
+      <h2 class="ensayo-titulo1">Desarrollo</h2>
       <p class="ensayo-text">{{ ensayo.texto }}</p>
-      <h3 class="ensayo-titulo1">CONCLUSIÓN</h3>
+      <h2 class="ensayo-titulo1">CONCLUSIÓN</h2>
       <p class="ensayo-text">{{ ensayo.conclusion }}</p>
     </div>
     <div ref="section2" class="comentarios-container">
@@ -230,24 +238,30 @@ watch(isSession, (nuevo) => {
               name="comment"
               id="comment-area"
               cols="100"
+          
               rows="5"
               v-model="comentario"
               placeholder="Comparte tu opinion con todos sobre este ensayo..."
             ></textarea>
             <button
-              @click.prevent="
-                databaseStore.addComment(
+              @click.prevent="databaseStore.addComment(
                   ensayo.tabla,
                   fullName,
                   avatarUrl,
-                  comentario
-                )
+                  comentario);comentario = '';activarPop()
               "
               :class="comentario.length > 0 ? 'active' : 'inactive'"
               class="comentar-button"
             >
               Publicar Comentario
             </button>
+            <Teleport to="body">
+      <transition name="fade" mode="out-in">
+      <ComentarioExitoso v-show="comentado"></ComentarioExitoso>
+      </transition>
+        
+     
+    </Teleport>
           </div>
         </div>
       </div>
@@ -310,6 +324,16 @@ watch(isSession, (nuevo) => {
 .slide-leave-to {
   opacity: 0;
   transform: translateX(-100vw);
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  transition: all 0.7s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+
 }
 .ensayos {
   display: flex;
